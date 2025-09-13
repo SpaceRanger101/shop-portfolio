@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleShop Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-purple-600 to-blue-500 text-white text-center py-6 shadow-md">
+    <div class="text-3xl font-bold mb-2"><i class="fas fa-shopping-bag"></i> StyleShop</div>
+    <p>Your one-stop fashion destination</p>
+  </header>
+
+  <div class="container mx-auto p-6">
+
+    <!-- Products Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 shop-content">
+
+      <!-- Product Example -->
+      <div class="product-box bg-white rounded-lg shadow-md overflow-hidden transform transition hover:-translate-y-2 hover:scale-105">
+        <div class="product-img overflow-hidden h-40">
+          <img src="images/product1.jpg" alt="Product 1" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-4">
+          <h2 class="product-title font-bold text-lg mb-1">🎧 Pro Gaming Earpiece</h2>
+          <p class="product-description text-gray-600 text-sm mb-2">Take your gaming to the next level with the Pro Gaming Earpiece. Designed for crystal-clear sound and noise isolation, it ensures every detail is heard – from footsteps to whispers – giving you the competitive edge. Lightweight and comfortable for long hours of play.</p>
+          <div class="product-price text-purple-600 font-semibold mb-2">MK 2999</div>
+          <button class="add-cart w-full bg-purple-600 text-white py-2 rounded hover:bg-blue-500 transition" onclick="addToCart('Classic Cotton T-Shirt', 2999, this)">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-box bg-white rounded-lg shadow-md overflow-hidden transform transition hover:-translate-y-2 hover:scale-105">
+        <div class="product-img overflow-hidden h-40">
+          <img src="images/product2.jpg" alt="Product 2" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-4">
+          <h2 class="product-title font-bold text-lg mb-1">👟 Vans Classic Sneakers</h2>
+          <p class="product-description text-gray-600 text-sm mb-2">Step up your style with Vans Classic Sneakers – built for comfort, durability, and everyday wear. With a sleek design and timeless look, they’re perfect for casual outings, skateboarding, or streetwear fashion.</p>
+          <div class="product-price text-purple-600 font-semibold mb-2">MK 5999</div>
+          <button class="add-cart w-full bg-purple-600 text-white py-2 rounded hover:bg-blue-500 transition" onclick="addToCart('Denim Jacket', 5999, this)">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-box bg-white rounded-lg shadow-md overflow-hidden transform transition hover:-translate-y-2 hover:scale-105">
+        <div class="product-img overflow-hidden h-40">
+          <img src="images/product3.jpg" alt="Product 3" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-4">
+          <h2 class="product-title font-bold text-lg mb-1">🦵 Elastic Knee Bandage</h2>
+          <p class="product-description text-gray-600 text-sm mb-2">Stay active and supported with the Elastic Knee Bandage. Perfect for sports, workouts, or recovery, it provides firm compression and flexibility to reduce strain and protect your knee. Comfortable, breathable, and easy to wear all day.</p>
+          <div class="product-price text-purple-600 font-semibold mb-2">MK 8999</div>
+          <button class="add-cart w-full bg-purple-600 text-white py-2 rounded hover:bg-blue-500 transition" onclick="addToCart('Casual Leather Shoes', 8999, this)">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-box bg-white rounded-lg shadow-md overflow-hidden transform transition hover:-translate-y-2 hover:scale-105">
+        <div class="product-img overflow-hidden h-40">
+          <img src="images/product4.jpg" alt="Product 4" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-4">
+          <h2 class="product-title font-bold text-lg mb-1">👕 Classic Golf Shirt</h2>
+          <p class="product-description text-gray-600 text-sm mb-2">Look sharp on and off the course with the Classic Golf Shirt. Made from soft, breathable fabric, it keeps you cool and stylish whether you’re playing a round or enjoying a casual day out. A versatile wardrobe essential for every occasion. </p>
+          <div class="product-price text-purple-600 font-semibold mb-2">MK 4999</div>
+          <button class="add-cart w-full bg-purple-600 text-white py-2 rounded hover:bg-blue-500 transition" onclick="addToCart('Designer Sunglasses', 4999, this)">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-box bg-white rounded-lg shadow-md overflow-hidden transform transition hover:-translate-y-2 hover:scale-105">
+        <div class="product-img overflow-hidden h-40">
+          <img src="images/product5.jpg" alt="Product 5" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-4">
+          <h2 class="product-title font-bold text-lg mb-1">Leather Handbag</h2>
+          <p class="product-description text-gray-600 text-sm mb-2">Step up your style with Vans Classic Sneakers, built for comfort, durability, and everyday wear. With a sleek design and timeless look, they are perfect for casual outings, skateboarding, or streetwear fashion.</p>
+          <div class="product-price text-purple-600 font-semibold mb-2">MK 7999</div>
+          <button class="add-cart w-full bg-purple-600 text-white py-2 rounded hover:bg-blue-500 transition" onclick="addToCart('Leather Handbag', 7999, this)">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Cart Box -->
+    <div class="cart-box bg-white rounded-lg shadow-md p-6 mt-8">
+      <h2 class="cart-title text-center text-purple-600 text-2xl font-bold mb-4">Your Shopping Cart</h2>
+      <div class="cart-items max-h-64 overflow-y-auto" id="cart-items">
+        <div class="empty-cart text-center text-gray-500 py-4">Your cart is empty</div>
+      </div>
+      <div class="cart-total flex justify-between font-bold text-lg mt-4 border-t-2 border-purple-600 pt-2">
+        <span>Total:</span>
+        <span id="cart-total">MK 0</span>
+      </div>
+      <a href="checkout.html" class="checkout-btn w-full bg-purple-600 text-white py-2 rounded mt-4 hover:bg-blue-500 transition inline-block text-center">
+        <i class="fas fa-check"></i> Proceed to Checkout
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-white bg-gray-800 py-4 mt-8">
+    &copy; 2025 StyleShop. All rights reserved @ Chrispin gondwe.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
