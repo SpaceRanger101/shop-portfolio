@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleShop - Home</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-purple-600"><i class="fas fa-shopping-bag"></i> StyleShop</a>
+      <div class="space-x-6">
+        <a href="electronics.html" class="hover:text-purple-600 font-medium">Electronics</a>
+        <a href="shoes.html" class="hover:text-purple-600 font-medium">Shoes</a>
+        <a href="accessories.html" class="hover:text-purple-600 font-medium">Accessories</a>
+        <a href="clothing.html" class="hover:text-purple-600 font-medium">Clothing</a>
+        <a href="cart.html" class="bg-purple-600 text-white px-3 py-1 rounded hover:bg-blue-500"><i class="fas fa-cart-plus"></i> Cart</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-r from-purple-600 to-blue-500 text-white text-center py-20">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to StyleShop</h1>
+    <p class="text-lg mb-6">Your one-stop fashion & lifestyle destination.</p>
+    <a href="#categories" class="bg-white text-purple-700 px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-100 transition">
+      Explore Categories
+    </a>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="container mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Featured Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- Product 1 -->
+      <div class="bg-white shadow rounded-xl overflow-hidden hover:scale-105 transition">
+        <img src="images/product1.jpg" alt="Gaming Earpiece" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">🎧 Pro Gaming Earpiece</h3>
+          <p class="text-gray-600 text-sm">Crystal-clear sound for gamers.</p>
+          <div class="text-purple-600 font-semibold mt-2">MK 2999</div>
+          <button onclick="addToCart('Pro Gaming Earpiece', 2999)" class="mt-3 w-full bg-purple-600 text-white py-2 rounded hover:bg-blue-500 transition">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white shadow rounded-xl overflow-hidden hover:scale-105 transition">
+        <img src="images/product2.jpg" alt="Sneakers" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">👟 Vans Classic Sneakers</h3>
+          <p class="text-gray-600 text-sm">Stylish and durable sneakers.</p>
+          <div class="text-purple-600 font-semibold mt-2">MK 5999</div>
+          <button onclick="addToCart('Vans Classic Sneakers', 5999)" class="mt-3 w-full bg-purple-600 text-white py-2 rounded hover:bg-blue-500 transition">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-white shadow rounded-xl overflow-hidden hover:scale-105 transition">
+        <img src="images/product4.jpg" alt="Golf Shirt" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">👕 Classic Golf Shirt</h3>
+          <p class="text-gray-600 text-sm">Look sharp on and off the course.</p>
+          <div class="text-purple-600 font-semibold mt-2">MK 4999</div>
+          <button onclick="addToCart('Classic Golf Shirt', 4999)" class="mt-3 w-full bg-purple-600 text-white py-2 rounded hover:bg-blue-500 transition">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white bg-gray-800 py-6 mt-12">
+    &copy; 2025 StyleShop. All rights reserved @ Chrispin Gondwe.
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>
